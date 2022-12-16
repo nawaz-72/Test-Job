@@ -95,20 +95,15 @@ function loadQuiz() {
                 },
                 1000 
             )
-        /*quiz.innerText = `Your Score is ${score}`;
-        submitBtn.innerText = "Restart";*/
     }
 }
-
 function deselectAnswers() {
     answerEls.forEach((e) => {
         e.checked = false;
         submitBtn.disabled = true;
-        
     });
     loadQuiz();
 }
-
 function getSelected() {
     answerEls.forEach((e) => {
         if (e.checked) {
@@ -119,11 +114,6 @@ function getSelected() {
     });
     currentQuiz++;
     deselectAnswers();
-}
-
-function passed()
-{
-   
 }
 
 submitBtn.addEventListener("click", () => {
